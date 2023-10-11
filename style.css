@@ -107,5 +107,10 @@ nav a:hover {
 .git-commands img{
     width: 100%;
 }
+.code{
+    background-color: rgb(192, 187, 187);
+    padding: 10px;
+    border-left: 10px solid blue;
+}
 
   

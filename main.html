@@ -37,18 +37,14 @@
                 <li><a href="#add">git add</a></li>
                 <li><a href="#commit">git commit</a></li>
                 <li><a href="#status">git status</a></li>
-                <li><a href="#remote">git remote</a></li>
                 <li><a href="#push">git push</a></li>
                 <li><a href="#clone">git clone</a></li>
                 <li><a href="#branch">git branch</a></li>
                 <li><a href="#checkout">git checkout</a></li>
                 <li><a href="#log">git log</a></li>
-                <li><a href="#stash">git stash</a></li>
-                <li><a href="#revert">git revert</a></li>
                 <li><a href="#diff">git diff</a></li>
                 <li><a href="#merge">git merge</a></li>
                 <li><a href="#rebase">git rebase</a></li>
-                <li><a href="#fetch">git fetch</a></li>
                 <li><a href="#reset">git reset</a></li>
                 <li><a href="#pull">git pull</a></li>
             </ul>
@@ -89,6 +85,39 @@
                 This command will show the modified status of an existing file and the file addition status of a new file, if any, that has to be committed.
             </div>
             <img src="./img/GItCommand5.png" alt="git-init">
+
+            <h2 id="push">5. git push</h2>
+            <h3>Usage: git push origin [branch name]</h3>
+            <div>
+                Suppose, we have made some changes in the file and want to push the changes to our remote repository on a particular branch. By using the command ‘git push,’ the local repository’s files can be synced with the remote repository on Github.
+            </div>
+            <img src="./img/GItCommand6.png" alt="git-init">
+            
+            
+            <h2 id="clone">6. git clone</h2>
+            <h3>Usage: git push origin [branch name]Usage: git clone [URL]</h3>
+            <div>
+                Suppose, we want to work on a file that is on a remote Github repository as another developer. How can we do that? We can work on this file by clicking on Clone or Download and copying the link and pasting it on the terminal with the git clone command. This will import the files of a project from the remote repository to our local system.
+            </div>
+            <img src="./img/GItCommand7.png" alt="git-init">
+            <div>
+                To create a local folder, we have to use the following command:
+            </div>
+            <div class="code">
+                <div>mkdir [directory- name]</div>
+                <div>cd [directory- name]</div>
+                <div>git clone [URL]</div>
+            </div>
+            <div>
+                Now, paste the copied link along with the git clone command as shown below:
+            </div>
+            <img src="./img/GItCommand8.png" alt="">
+            <div>
+                <span>Note :</span> Here, we don’t have to use the git remote add origin command because we have already cloned the remote repository in the local directory. Now, if we push any new file, it knows where it has to go.
+            </div>
+
+            
+            
 
 
 
