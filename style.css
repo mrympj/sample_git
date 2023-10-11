@@ -8,17 +8,22 @@
 .header {
     background-color: #333;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
-  
-.header h1 {
-    text-align: center;
-    font-size: 32px;
-    padding-top: 30px;
+.header .svg-container{
+    width: 100px;   
+    display: flex; 
+    margin-right: 50px;
+}
+.svg-container img{
+    width: 100%;
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
 }
 nav ul {
     display: flex;
