@@ -33,31 +33,54 @@
             </div>
             <h3>Here are the top 18 Git commands list discussed in this tutorial:</h3>
             <ul>
-                <li><a href="">git init</a></li>
-                <li><a href="">git add</a></li>
-                <li><a href="">git commit</a></li>
-                <li><a href="">git status</a></li>
-                <li><a href="">git remote</a></li>
-                <li><a href="">git push</a></li>
-                <li><a href="">git clone</a></li>
-                <li><a href="">git branch</a></li>
-                <li><a href="">git checkout</a></li>
-                <li><a href="">git log</a></li>
-                <li><a href="">git stash</a></li>
-                <li><a href="">git revert</a></li>
-                <li><a href="">git diff</a></li>
-                <li><a href="">git merge</a></li>
-                <li><a href="">git rebase</a></li>
-                <li><a href="">git fetch</a></li>
-                <li><a href="">git reset</a></li>
-                <li><a href="">git pull</a></li>
+                <li><a href="#init">git init</a></li>
+                <li><a href="#add">git add</a></li>
+                <li><a href="#commit">git commit</a></li>
+                <li><a href="#status">git status</a></li>
+                <li><a href="#remote">git remote</a></li>
+                <li><a href="#push">git push</a></li>
+                <li><a href="#clone">git clone</a></li>
+                <li><a href="#branch">git branch</a></li>
+                <li><a href="#checkout">git checkout</a></li>
+                <li><a href="#log">git log</a></li>
+                <li><a href="#stash">git stash</a></li>
+                <li><a href="#revert">git revert</a></li>
+                <li><a href="#diff">git diff</a></li>
+                <li><a href="#merge">git merge</a></li>
+                <li><a href="#rebase">git rebase</a></li>
+                <li><a href="#fetch">git fetch</a></li>
+                <li><a href="#reset">git reset</a></li>
+                <li><a href="#pull">git pull</a></li>
             </ul>
-            <h2>1. git init</h2>
+            <h2 id="init">1. git init</h2>
             <h3>Usage: git init [repository name]</h3>
             <div>
                 We have to navigate to our project directory and type the command git init to initialize a Git repository for our local project folder. Git will create a hidden .git directory and use it for keeping its files organized in other subdirectories.
             </div>
             <img src="./img/GItInit.png" alt="git-init">
+
+            <h2 id="add">2. git add</h2>
+            <h3>Usage (i): git add [file(s) name]</h3>
+            <div>
+                This will add the specified file(s) into the Git repository, the staging area, where they are already being tracked by Git and now ready to be committed.
+            </div>
+            <img src="./img/GItCommand2.png" alt="git-add">
+            <h3>Usage (ii): git add . or git add *</h3>
+            <div>
+                This will take all our files into the Git repository, i.e., into the staging area.
+            </div>
+            <img src="./img/GItCommand3.png" alt="git-add">
+            <div>
+                We can use this command as git add -A as well.
+            </div>
+            <div><span>Note :</span> We will have to commit our files after we add them to the staging area.
+            </div>
+            
+
+
+
+
+
         </div>
     </section>
 </body>

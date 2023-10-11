@@ -38,17 +38,20 @@ nav a:hover {
     color: yellow;
 }
 .content{
-    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
-    
+    background-color: rgb(247, 245, 245);
 }
 .content .leftbar{
     position: sticky;
+    top: 0;
     width: 20%;
+    height: 100vh;
     margin: 0 4%;
     padding: 50px 5%;
     border: 1px solid rgb(226, 226, 226);
+    background-color: white;
 }
 .content .git-commands{
     display: flex;
@@ -57,22 +60,34 @@ nav a:hover {
     padding: 50px 5%;
     border: 1px solid rgb(226, 226, 226);
     gap: 20px;    
+    background-color: white;
+
 }
 .git-commands h1{
     font-size: 30px;
 }
+.git-commands h2{
+    font-size: 28px;
+    margin-top: 50px;
+}
 .git-commands h3{
     font-size: 22px;
+    margin: 5px 0;
 }
 .git-commands div{
     font-size: 24px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
+.git-commands div span{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(184, 44, 44);
+}
 .git-commands ul{
     display: flex;
     flex-direction: column;
     list-style-type: circle;
-    gap: 10px;
+    gap: 15px;
     font-size: 25px;
     padding-left: 25px;
     margin: 10px 0;
@@ -80,7 +95,11 @@ nav a:hover {
 .git-commands ul li a{
     text-decoration: none;
     color: rgb(32, 32, 211);
-
+    transition: 0.5s;
+}
+.git-commands ul li a:hover{
+    color: red;
+    transform: scale(2);
 }
 .git-commands img{
     width: 100%;
