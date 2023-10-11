@@ -37,4 +37,53 @@ nav a {
 nav a:hover {
     color: yellow;
 }
+.content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.content .leftbar{
+    position: sticky;
+    width: 20%;
+    margin: 0 4%;
+    padding: 50px 5%;
+    border: 1px solid rgb(226, 226, 226);
+}
+.content .git-commands{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    padding: 50px 5%;
+    border: 1px solid rgb(226, 226, 226);
+    gap: 20px;    
+}
+.git-commands h1{
+    font-size: 30px;
+}
+.git-commands h3{
+    font-size: 22px;
+}
+.git-commands div{
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+.git-commands ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap: 10px;
+    font-size: 25px;
+    padding-left: 25px;
+    margin: 10px 0;
+}
+.git-commands ul li a{
+    text-decoration: none;
+    color: rgb(32, 32, 211);
+
+}
+.git-commands img{
+    width: 100%;
+}
+
   
