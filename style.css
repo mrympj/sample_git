@@ -71,15 +71,18 @@ nav a:hover {
     margin-top: 50px;
 }
 .git-commands h3{
-    font-size: 22px;
+    font-size: 24px;
     margin: 5px 0;
+    word-spacing: 2px;
 }
 .git-commands div{
     font-size: 24px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    word-spacing: 2px;
+
 }
 .git-commands div span{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     color: rgb(184, 44, 44);
 }
