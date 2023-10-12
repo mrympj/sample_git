@@ -3,7 +3,6 @@ HEAD
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
   
 .header {
@@ -11,6 +10,7 @@ HEAD
     color: white;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
 }
 .header .svg-container{
     width: 100px;   
@@ -22,19 +22,18 @@ HEAD
 }
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
+    width: 20%;
 }
 nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
     width: 100%;
-    justify-content: left;
-    gap: 60px;
-    margin: 10px 50px;
-    padding-bottom: 20px;
+    margin: 0 0 0 10%;
     list-style: none;
+    text-align: center;
+    align-items: center;
 }
 nav a {
     color: white;
@@ -44,20 +43,41 @@ nav a:hover {
     color: yellow;
 }
 .content{
-    padding-top: 50px;
+    padding: 50px 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: rgb(247, 245, 245);
 }
 .content .leftbar{
     position: sticky;
-    top: 0;
-    width: 20%;
-    height: 100vh;
+    width: 70%;
+    top: 40px;
+    height: 500px;
+    overflow: auto;
     margin: 0 4%;
-    padding: 50px 5%;
-    border: 1px solid rgb(226, 226, 226);
     background-color: white;
+}
+.content .leftbar h3{
+    padding: 40px 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color:blue;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+.content .leftbar div{
+    padding: 40px 50px;
+    text-align: center;
+    border: 1px solid rgb(204, 204, 204 ,0.5);
+}
+.content .leftbar div:hover{
+    background-color: #e2dfdf;
+}
+.content .leftbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 .content .git-commands{
     display: flex;
@@ -118,6 +138,47 @@ nav a:hover {
     padding: 10px;
     border-left: 10px solid blue;
 }
+
+@media only screen and (max-width: 1600px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .git-commands{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .content .leftbar{
+        width: 80%;
+        margin: 0 auto 50px;
+        position: unset;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .content .leftbar a{
+        font-size: 14px;
+    }
+    .content .git-commands h1{
+        font-size: 20px;
+    }
+    .content .git-commands h2{
+        font-size: 18px;
+    }
+    .content .git-commands h3{
+        font-size: 17px;
+    }
+    .content .git-commands div{
+        font-size: 15px;
+    }
+    .content .git-commands div span{
+        font-size: 15px;
+    }
+    .content .git-commands ul{
+        font-size: 16px;
+    }
+}
+
+  
 .footer{
     display: flex;
     flex-direction: column;
