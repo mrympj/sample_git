@@ -1,3 +1,123 @@
+HEAD
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.header .svg-container{
+    width: 100px;   
+    display: flex; 
+    margin-right: 50px;
+}
+.svg-container img{
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    gap: 60px;
+    margin: 10px 50px;
+    padding-bottom: 20px;
+    list-style: none;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: yellow;
+}
+.content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 245, 245);
+}
+.content .leftbar{
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    margin: 0 4%;
+    padding: 50px 5%;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: white;
+}
+.content .git-commands{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    padding: 50px 5%;
+    border: 1px solid rgb(226, 226, 226);
+    gap: 20px;    
+    background-color: white;
+
+}
+.git-commands h1{
+    font-size: 30px;
+}
+.git-commands h2{
+    font-size: 28px;
+    margin-top: 50px;
+}
+.git-commands h3{
+    font-size: 24px;
+    margin: 5px 0;
+    word-spacing: 2px;
+}
+.git-commands div{
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    word-spacing: 2px;
+
+}
+.git-commands div span{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(184, 44, 44);
+}
+.git-commands ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap: 15px;
+    font-size: 25px;
+    padding-left: 25px;
+    margin: 10px 0;
+}
+.git-commands ul li a{
+    text-decoration: none;
+    color: rgb(32, 32, 211);
+    transition: 0.5s;
+}
+.git-commands ul li a:hover{
+    color: red;
+    transform: scale(2);
+}
+.git-commands img{
+    width: 100%;
+}
+.code{
+    background-color: rgb(192, 187, 187);
+    padding: 10px;
+    border-left: 10px solid blue;
+}
 .footer{
     display: flex;
     flex-direction: column;

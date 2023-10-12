@@ -7,7 +7,134 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <section class="header">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="svg-container">
+            <img src="./img/git-svg.svg" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="leftbar">
+            <h3>Git Tutotial - Learn From #</h3>
+            <div><a href="#"></a></div>
+            <div><a href="#"></a></div>
+            <div><a href="#"></a></div>
+        </div> 
+        <div class="git-commands">
+            <h1>Git Commands</h1>
+            <div>Git is a free, open-source distributed version control system tool designed to handle small to very large projects with speed and efficiency. It has steadily grown from just being a preferred skill to a must-have skill for multiple job roles today. Git has become an essential part of our everyday development process.
+
+                In this Git commands tutorial, let’s talk about the top 18 Git commands that are useful for working with Git.
+            </div>
+            <h3>Here are the top 18 Git commands list discussed in this tutorial:</h3>
+            <ul>
+                <li><a href="#init">git init</a></li>
+                <li><a href="#add">git add</a></li>
+                <li><a href="#commit">git commit</a></li>
+                <li><a href="#status">git status</a></li>
+                <li><a href="#push">git push</a></li>
+                <li><a href="#clone">git clone</a></li>
+                <li><a href="#branch">git branch</a></li>
+                <li><a href="#checkout">git checkout</a></li>
+                <li><a href="#log">git log</a></li>
+                <li><a href="#diff">git diff</a></li>
+                <li><a href="#merge">git merge</a></li>
+                <li><a href="#rebase">git rebase</a></li>
+                <li><a href="#reset">git reset</a></li>
+                <li><a href="#pull">git pull</a></li>
+            </ul>
+            <h2 id="init">1. git init</h2>
+            <h3>Usage: git init [repository name]</h3>
+            <div>
+                We have to navigate to our project directory and type the command git init to initialize a Git repository for our local project folder. Git will create a hidden .git directory and use it for keeping its files organized in other subdirectories.
+            </div>
+            <img src="./img/GItInit.png" alt="git-init">
+
+            <h2 id="add">2. git add</h2>
+            <h3>Usage (i): git add [file(s) name]</h3>
+            <div>
+                This will add the specified file(s) into the Git repository, the staging area, where they are already being tracked by Git and now ready to be committed.
+            </div>
+            <img src="./img/GItCommand2.png" alt="git-add">
+            <h3>Usage (ii): git add . or git add *</h3>
+            <div>
+                This will take all our files into the Git repository, i.e., into the staging area.
+            </div>
+            <img src="./img/GItCommand3.png" alt="git-add">
+            <div>
+                We can use this command as git add -A as well.
+            </div>
+            <div><span>Note :</span> We will have to commit our files after we add them to the staging area.
+            </div>
+
+            <h2 id="commit">3. git commit</h2>
+            <h3> Usage: git commit -m “message”</h3>
+            <div>
+                This command records or snapshots files permanently in the version history. All the files, which are there in the directory right now, are being saved in the Git file system.            </div>
+            <img src="./img/GItCommand4.png" alt="git-init">
+
+
+            <h2 id="status">4. git status</h2>
+            <h3>Usage: git status</h3>
+            <div>
+                This command will show the modified status of an existing file and the file addition status of a new file, if any, that has to be committed.
+            </div>
+            <img src="./img/GItCommand5.png" alt="git-init">
+
+            <h2 id="push">5. git push</h2>
+            <h3>Usage: git push origin [branch name]</h3>
+            <div>
+                Suppose, we have made some changes in the file and want to push the changes to our remote repository on a particular branch. By using the command ‘git push,’ the local repository’s files can be synced with the remote repository on Github.
+            </div>
+            <img src="./img/GItCommand6.png" alt="git-init">
+            
+            
+            <h2 id="clone">6. git clone</h2>
+            <h3>Usage: git push origin [branch name]Usage: git clone [URL]</h3>
+            <div>
+                Suppose, we want to work on a file that is on a remote Github repository as another developer. How can we do that? We can work on this file by clicking on Clone or Download and copying the link and pasting it on the terminal with the git clone command. This will import the files of a project from the remote repository to our local system.
+            </div>
+            <img src="./img/GItCommand7.png" alt="git-init">
+            <div>
+                To create a local folder, we have to use the following command:
+            </div>
+            <div class="code">
+                <div>mkdir [directory- name]</div>
+                <div>cd [directory- name]</div>
+                <div>git clone [URL]</div>
+            </div>
+            <div>
+                Now, paste the copied link along with the git clone command as shown below:
+            </div>
+            <img src="./img/GItCommand8.png" alt="">
+            <div>
+                <span>Note :</span> Here, we don’t have to use the git remote add origin command because we have already cloned the remote repository in the local directory. Now, if we push any new file, it knows where it has to go.
+            </div>
+
+            <h2 id="branch">7. git branch</h2>
+            <h3>Usage (i): git branch [name-of-the-branch]</h3>
+            <div>
+                When multiple developers are collaborating on a project or repository, branches become essential for managing different workspaces. Using this command, we can create a new branch (for example, ‘branch1’). This allows developers to work independently on their respective branches, making changes and commits without affecting the main branch or other branches.
+            </div>
+            <img src="./img/branch1.png" alt="git-branch">
+            <h3>Usage (ii): git branch -D [name-of-the-branch]</h3>
+            <div>
+                Likewise, to delete a branch, we utilize the “git branch -D” command. This enables us to remove a specific branch (e.g., ‘name-of-the-branch’) that is no longer needed, cleaning up the repository and reducing clutter.
+            </div>
+            <img src="./img/branch2.png" alt="">
+
+
+        </div>
+    </section>
+      
     <section class="footer">
         <div class="social-media">
             <div><a href="#"><img src="./img/icons8-instagram-48.svg" alt=""></a></div>
