@@ -130,11 +130,108 @@
             </div>
             <img src="./img/branch2.png" alt="">
 
+            <h2 id="checkout">8. git checkout</h2>
+            <h3>Usage (i): git checkout [name-of-the-new-branch]</h3>
+            <div>
+                This command allows us to switch to an existing branch within our repository. It facilitates navigating to the desired branch, enabling us to add new files, make changes, and commit those files within that specific branch.
+            </div>
+            <img src="./img/checkout.png" alt="git-checkout">
+            <h3>Usage (ii): git checkout -b [name-of-the-new-branch]</h3>
+            <div>
+                This command serves a dual function. Firstly, it creates a new branch with the given name (for example, ‘branch2’). Secondly, it immediately switches our working environment to that newly created branch. This allows us to seamlessly begin working within the newly created branch, making it convenient to add files, make modifications, and commit changes exclusively within that branch.
+            </div>
+            <img src="./img/checkout2.png" alt="">
+
+
+            <h2 id="log">9. git log</h2>
+            <h3>Usage (i): git log</h3>
+            <div>
+                The “git log” command is handy when we want to examine the detailed log of every commit in our repository. By executing this command, we can view the log specific to the branch we are currently in. Additionally, we can use “git log -3” to display the last three logs.
+            </div>
+            <img src="./img/gitlog.png" alt="git-log">
+            <h3>Usage (ii): git log –graph </h3>
+            <div>
+                For a visual representation of the commit history, we can utilize “git log –graph”. This option presents the commit-graph, showcasing the branching and merging of commits
+            </div>
+            <img src="./img/gitlog2.png" alt="">
+            <h3>Usage (iii): git log –graph –pretty=oneline</h3>
+            <div>
+                To further customize the output, we can use “git log –graph –pretty=oneline”. This format displays the commit graph along with a concise one-line description for each commit.
+            </div>
+            <img src="./img/gitlog3.png" alt="">
+
+
+            <h2 id="diff">10. git diff</h2>
+            <h3>Usage: git diff [commit-id-of-version-x] [commit-id-of-version-y]</h3>
+            <div>
+                Diffing is a function that takes two input datasets and outputs the changes between them. The git diff command is a multi-use Git command which, when executed, runs a diff function on Git data sources. These data sources can be commits, branches, files, and more. The git diff command is often used along with the git status and git log commands to analyze the current state of our Git repository. We use git log to get the details of commit IDs.
+            </div>
+            <div>
+                Let’s compare the working directory with the index as shown below:
+            </div>
+            <img src="./img/gitdiff.png" alt="git-diff">
+
+
+            
+            <h2 id="merge">11. git merge</h2>
+            <h3>Usage: git merge [another-file-name]</h3>
+            <div>
+                This command will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches. The git merge command takes two commit pointers, usually the branch tips, and finds a common base commit between them. Once it finds a common base commit, it will create a commit sequence.
+            </div>
+            <img src="./img/gitmerge.png" alt="git-merge">
+
+
+            <h2 id="rebase">12. git rebase</h2>
+            <h3>Usage: git rebase [base]</h3>
+            <div>
+                Rebase is the process of moving and combining a sequence of commits to a new base commit. Rebasing is changing the base of our branch from one commit to another, making it appear as if we’ve created our branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It’s very important to understand that even though the branch looks the same, it is composed of entirely new commits.
+            </div>
+            <div>
+                The git rebase command performs an automatic git checkout <branch> before doing anything else. Otherwise, it remains on the current branch.
+            </div>
+            <img src="./img/gitrebase.png" alt="git-rebase">
+            <div>
+                Consider a situation where we have branched off from the master and have created a feature branch, but the master branch is still having more commits. We want to get the updated version of the master branch in our feature branch, keeping our branch’s history clean, so that it appears as if we are working on the latest version of the master branch.
+            </div>
+            <div><span>Note :</span>
+                We don’t rebase public history. We should never rebase commits once they are pushed to a public repository. Why because the rebase would replace the old commits with the new ones, and it would appear that a part of our project history got abruptly vanished.
+            </div>
+
+
+            
+            <h2 id="reset">13. git reset</h2>
+            <h3>Usage: git reset –hard [SOME-COMMIT]</h3>
+            <div>
+                We use this command to return the entire working tree to the last committed state.
+            </div>
+            <img src="./img/gitreset.png" alt="git-reset">
+            <div>
+                This will discard commits in a private branch or throw away the uncommitted changes!
+            </div>
+            <div>
+                Here, we have executed a ‘hard reset’ using the –hard option. Git displays the output indicating that the HEAD is pointing to the latest commit. Now, when we check the state of the repo with git status, Git will indicate that there are no pending changes (if any prior addition of a new file or modification of an existing file is done before using the ‘git reset –hard’ command). Our modifications to an existing file, if not committed, and the addition of a new file, if not staged, will be destroyed. It is critical to take note that this data loss cannot be undone.
+            </div>
+            <div>If we do <span>git reset –hard [SOME-COMMIT]</span> then Git will:</div>
+            <div>
+                Make our current branch (typically master) back to point "SOME-COMMIT"
+            </div>
+            <div>
+                Make the files in our working tree and the index (“staging area”) the same as the versions committed at "SOME-COMMIT"
+            </div>
+
+
+            <h2 id="pull">14. git pull</h2>
+            <h3>Usage: git pull origin master</h3>
+            <div>
+                The git pull command first runs ‘git fetch’ which downloads the content from the specified remote repository and then immediately updates the local repo to match the content.
+            </div>
+            <img src="./img/gitpull.png" alt="git-pull">
+            <div></div>
 
         </div>
     </section>
 
-    
 
+    
 </body>
 </html>
