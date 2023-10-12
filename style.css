@@ -2,7 +2,6 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
   
 .header {
@@ -50,13 +49,33 @@ nav a:hover {
 }
 .content .leftbar{
     position: sticky;
-    top: 0;
-    width: 20%;
-    height: 100vh;
+    width: 60%;
+    top: 40px;
+    height: 500px;
+    overflow: auto;
     margin: 0 4%;
-    padding: 50px 5%;
-    border: 1px solid rgb(226, 226, 226);
     background-color: white;
+}
+.content .leftbar h3{
+    padding: 40px 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color:blue;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+.content .leftbar div{
+    padding: 40px 50px;
+    text-align: center;
+    border: 1px solid rgb(204, 204, 204 ,0.5);
+}
+.content .leftbar div:hover{
+    background-color: #e2dfdf;
+}
+.content .leftbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 .content .git-commands{
     display: flex;
